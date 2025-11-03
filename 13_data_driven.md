@@ -1,50 +1,35 @@
-\section*{Financial Sector PE Ratio \& Performance Analysis}
+Financial Sector PE Ratio & Performance Analysis
+Overview
+Analyze Price-to-Earnings (PE) ratios and returns of major U.S. financial sector stocks (JPM, BAC, MS, SCHW, GS, AXP, C) from January 2021 to January 2022 using the QuantConnect Research Environment. Includes valuation vs. performance study, BAC options chain data, Bollinger Bands, and regression forecasting.
 
-\subsection*{Overview}
-This research notebook analyzes Price-to-Earnings (PE) ratios and cumulative returns for major U.S. financial sector stocks (\texttt{JPM, BAC, MS, SCHW, GS, AXP, C}) over the period \textbf{January 2021 to January 2022}. It also explores the relationship between valuation (PE) and returns, and demonstrates BAC option chain and Bollinger Band technical analysis with regression forecasting.
+Features
+PE Ratio Analysis: Retrieve and visualize fundamental valuation metrics.
 
-\subsection*{Libraries Used}
-\begin{itemize}
-    \item \textbf{matplotlib}: For plotting graphs and visualizing data.
-    \item \textbf{numpy}: For numerical operations and matrix calculations.
-    \item \textbf{QuantConnect QuantBook}: For market data retrieval and indicator computation.
-\end{itemize}
+Return Calculations: Plot cumulative stock returns over time.
 
-\subsection*{Data Sources}
-\begin{itemize}
-    \item \textbf{QuantConnect Dataset Market}: Financial fundamentals (PE ratios) and daily price data.
-\end{itemize}
+Valuation vs. Returns: Study correlation between PE ratios and yearly returns.
 
-\subsection*{Key Features}
-\begin{itemize}
-    \item Retrieval and visualization of PE ratios for selected stocks.
-    \item Calculation and plotting of cumulative returns.
-    \item Correlation study between PE ratio and yearly returns.
-    \item Options chain and Bollinger Band analysis for BAC.
-    \item Linear regression forecasting using Bollinger Band middle line.
-\end{itemize}
+Options Chain Example: Showcase BAC options strikes, expiry, and pricing.
 
-\subsection*{Installation \& Setup}
-\begin{enumerate}
-    \item Run in QuantConnect Research Environment (Jupyter notebook).
-    \item Libraries are automatically available. No additional installation required.
-\end{enumerate}
+Technical Indicator Analysis: Visualize Bollinger Bands and apply linear regression forecasting.
 
-\subsection*{Usage}
-\begin{itemize}
-    \item Specify the time period and tickers as needed.
-    \item Run all cells sequentially for complete analysis.
-\end{itemize}
+Libraries Used
+matplotlib — Data visualization
 
-\subsection*{Example Output}
-\begin{itemize}
-    \item Graphs of PE ratios and cumulative returns.
-    \item Scatter plot of return vs. PE ratio.
-    \item Bollinger Band and linear regression plots.
-\end{itemize}
+numpy — Numerical analysis
 
-\subsection*{Documentation References}
-\begin{itemize}
-    \item \href{https://www.quantconnect.com/docs/v2/cloud-platform/research/getting-started}{QuantConnect Research Docs}
-    \item \href{https://github.com/QuantConnect/Tutorials}{QuantConnect Tutorials}
-\end{itemize}
+QuantConnect QuantBook — Market data, indicators, and options
+
+sklearn — Regression modeling
+
+Usage
+Run in QuantConnect’s Research (Jupyter) Environment.
+
+All required libraries come pre-installed.
+
+Change tickers, analysis dates, or logic as desired.
+
+Output
+Interactive plots for PE ratios, returns, Bollinger Bands, and regression output.
+
+Option chain and technical indicator exploration.
